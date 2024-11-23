@@ -44,7 +44,6 @@
 body {
   font-family: var(--ff-secondary);
   background: var(--clr-grey-10);
-  color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
 }
@@ -52,43 +51,65 @@ body {
 section {
   padding: 5rem 0;
   justify-content: center;
-  width: 90vw;
+  width: 100vw;
   display: flex;
   flex-direction: column;
 }
 
-.btn {
-  text-transform: uppercase;
+/* .btn {
+  /* text-transform: uppercase;
   background: transparent;
-  color: var(--clr-black);
+  color: var(--clr-red-light);
   padding: 0.375rem 0.75rem;
   letter-spacing: var(--spacing);
   display: inline-block;
   transition: var(--transition);
   font-size: 0.875rem;
-  border: 2px solid var(--clr-black);
+  border: 2px solid var(--clr-red-light);
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: var(--radius); */
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  background: transparent;
+  color: var(--clr-red-light);
+  padding: 0.375rem 0.75rem;
+  letter-spacing: var(--spacing);
+  display: inline-block;
+  transition: var(--transition);
+  font-size: 0.875rem;
+  border: 2px solid var(--clr-red-light);
   cursor: pointer;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   border-radius: var(--radius);
 }
 
-a {
-  text-decoration: none;
-  color: var(--clr-black);
+a:hover {
+  color: var(--clr-white);
+  background: var(--clr-red-light);
 }
 
 .btn:hover {
   color: var(--clr-white);
-  background: var(--clr-grey-5);
+  /* background: var(--clr-red-light); */
 }
 
 h1 {
   text-align: center;
+  color: var(--clr-red-light);
 }
 
 .recipe-container {
+  margin: auto;
   padding: 5rem;
   text-align: center;
   display: flex;
   flex-direction: column;
+}
+
+ul,
+ol {
+  list-style: none;
 }
